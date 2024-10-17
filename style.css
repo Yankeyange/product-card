@@ -1,0 +1,102 @@
+.perfume {
+  letter-spacing: 3px; /* permet l'espacement entre les lettres */
+  text-transform: uppercase; /* mermet de mettre le mot en majuscule */
+}
+
+ button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ button:hover {
+  background-color: #45a049;
+}
+
+.price {
+  font-size: 50px;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+p{
+  font-size: 18px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hauteur de la vue complète */
+}
+
+.container {
+  display: flex; /* Activer Flexbox */
+  flex-direction: row; /* Disposer les éléments en ligne */
+  align-items: center; /* Centrer les éléments verticalement */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+.image {
+  flex: 1; /* Faire que l'image prenne une partie de l'espace */
+}
+
+.element {
+  flex: 1; /* Faire que le texte prenne une partie de l'espace */
+}
+
+.image img {
+  max-width: 100%; /* Ajuste la taille de l'image */
+  height: auto; /* Conserve les proportions */
+}
+
+
+.cafe-border {
+  background-color: white; /* blanc pour la bordure de fond */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optionnel pour un peu de style */
+  width: 80%; /* Largeur par défaut */
+  text-align: left;
+}
+
+/* Pour les écrans larges (par exemple, 1440px et plus) */
+@media (min-width: 1440px) {
+  .cafe-border {
+      width: 60%; /* Ajuste la largeur pour les grands écrans */
+      padding: 40px; /* Ajuste le padding pour les grands écrans */
+  }
+
+  .content {
+      padding: 40px; /* Ajuste le padding pour les grands écrans */
+  }
+}
+
+/* Pour les écrans moyens (par exemple, entre 768px et 1439px) */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .cafe-border {
+      width: 70%; /* Ajuste la largeur pour les écrans moyens */
+      padding: 30px; /* Ajuste le padding pour les écrans moyens */
+  }
+}
+
+/* Pour les petits écrans (par exemple, moins de 768px) */
+@media (max-width: 767px) {
+  .cafe-border {
+      width: 90%; /* Ajuste la largeur pour les petits écrans */
+      padding: 20px; /* Ajuste le padding pour les petits écrans */
+  }
+}
+
+.content {
+  background-color: black; /* Fond blanc pour le contenu */
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center; /* Centrer le texte */
+}
